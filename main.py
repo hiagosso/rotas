@@ -16,7 +16,7 @@ def main(page: Page):
             page.views.append(
                 View("/2",[ElevatedButton("volta",on_click=lambda _:page.go("/")),
                            AppBar(title=Text("p2",color=colors.WHITE),bgcolor=colors.BLACK),
-                           Image(src="asst/cave.png",width=200)],
+                           Image(src="cave.png",width=200)],
                  bgcolor=colors.AMBER)
                 )
         page.update()
@@ -31,4 +31,4 @@ def main(page: Page):
     page.go("/")
 
 
-flet.app(target=main, assets_dir="asst")
+flet.app(target=main)
